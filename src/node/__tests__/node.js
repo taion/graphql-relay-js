@@ -99,7 +99,8 @@ var queryType = new GraphQLObjectType({
 });
 
 var schema = new GraphQLSchema({
-  query: queryType
+  query: queryType,
+  types: [userType, photoType]
 });
 
 describe('Node interface and fields', () => {
