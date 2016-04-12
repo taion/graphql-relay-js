@@ -48,7 +48,7 @@ var photoData = {
 };
 
 var {nodeField, nodeInterface} = nodeDefinitions(
-  (id, info) => {
+  (id, context, info) => {
     expect(info.schema).to.equal(schema);
     if (userData[id]) {
       return userData[id];
